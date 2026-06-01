@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorium 5</title>
+  </head>
+  <body class="p-8 font-sans">
+    
+    <h1 class="text-2xl font-bold mb-6">Kalkulator dni urodzin</h1>
+    
+    <form id="birthday-form" class="mb-4">
+      <label class="block mb-2">Wybierz datę urodzenia:</label>
+      <input type="date" id="bday-input" required class="border border-gray-300 p-2 rounded mb-2" />
+      
+      <button type="submit" class="bg-blue-300 p-4 rounded block mt-2 hover:bg-blue-400 transition">
+        Oblicz
+      </button>
+    </form>
+
+    <dialog id="result-dialog" class="bg-gray-200 text-red-600 p-6 rounded-lg relative min-w-[300px] shadow-lg">
+      <button type="button" id="close-dialog" class="absolute top-2 right-3 font-bold text-xl hover:text-red-800 cursor-pointer border-none bg-transparent">
+        &times;
+      </button>
+      
+      <p id="dialog-text" class="mt-4 text-lg"></p>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
